@@ -16,7 +16,7 @@
 
 	<!-- Stili -->
 	<link rel="stylesheet" href="./css/style.css">
-	<!-- Icona -->
+	<!-- Icona --> 
 	<link rel="icon" href="./img/icon.png">
 	
 	<title>Geek Factory - Home</title>
