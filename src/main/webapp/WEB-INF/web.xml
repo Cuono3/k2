@@ -20,14 +20,16 @@
   	</web-resource-collection>
   	<auth-constraint>
   		<role-name>registeredUser</role-name>
-  	</auth-constraint> <!--   
+  	</auth-constraint>
+  	<!--
   	<user-data-constraint>
   		<transport-guarantee>
   			CONFIDENTIAL
   		</transport-guarantee>
   	</user-data-constraint>
-  -->
-  </security-constraint>
+  	-->
+</security-constraint>
+
   
   <security-role>
   	<role-name>administrator</role-name>
@@ -36,4 +38,15 @@
   	<role-name>registeredUser</role-name>
   </security-role>
   
+  <!-- Configurazione della pagina di errore per errori interni al server -->
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error500.jsp</location>
+    </error-page>
+
+    <!-- Configurazione della pagina di errore per errori generici -->
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/error.jsp</location>
+    </error-page>
 </web-app>
