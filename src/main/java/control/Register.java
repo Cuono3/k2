@@ -44,7 +44,7 @@ public class Register extends HttpServlet {
 		String password = request.getParameter("password");
 		String nome = request.getParameter("nome");
 		String cognome = request.getParameter("cognome");
-		String indirizzo = request.getParameter("indirizzo");
+		String indirizzo = request.getParameter("indirizzo"); 
 		String telefono = request.getParameter("telefono");
 		String carta = request.getParameter("carta");
 		String intestatario = request.getParameter("intestatario");
